@@ -1,0 +1,80 @@
+@layer components {
+  .hall-of-fame {
+    @apply pt-16;
+  }
+
+  .hall-of-fame__title {
+    @apply text-gold text-center font-bold pb-7;
+  }
+
+  .hall-of-fame__text {
+    /* @media screen and (max-width: 991px) {
+      width: 80%;
+    } */
+    @apply text-center w-1/2 m-auto;
+  }
+
+  .hall-of-fame__members {
+    @apply py-14;
+  }
+
+  .hall-of-fame__member {
+    /* @media screen and (max-width: 575px) {
+      text-align: center;
+      width: 33.3%;
+    } */
+    @apply pb-5;
+  }
+
+  .hall-of-fame__view-all {
+    @apply text-center underline;
+  }
+
+  .hall-of-fame__view-all a {
+    @apply text-gold;
+  }
+}
+
+/* .hall-of-fame {
+  padding-top: 70px;
+
+  &__title {
+    color: $primary;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 30px;
+  }
+
+  &__text {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+
+    @media screen and (max-width: 991px) {
+      width: 80%;
+    }
+  }
+
+  &__members {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__member {
+    padding-bottom: 20px;
+
+    @media screen and (max-width: 575px) {
+      text-align: center;
+      width: 33.3%;
+    }
+  }
+
+  &__view-all {
+    text-align: center;
+    text-decoration: underline;
+
+    a {
+      color: $primary;
+    }
+  }
+} */
