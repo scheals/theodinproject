@@ -1,9 +1,9 @@
 <%= title('Contributing') %>
 
-<div class="container tmp-container-spacer">
-  <div class="page-intro">
-    <h1 class="page-heading-title">How to Contribute</h1>
-    <p class="page-intro__text">
+<div class='container tmp-container-spacer'>
+  <div class='page-intro'>
+    <h1 class='page-heading-title'>How to Contribute</h1>
+    <p class='w-3/5 m-auto'>
       The Odin Project is an Open Source project, built and maintained by volunteers who dedicate their time and skills to making The Odin Project one of the best free education platforms on the web. We are always working on projects to improve Odin and are always looking for people who want to join our growing team of maintainers.</a>
     </p>
   </div>
@@ -13,4 +13,24 @@
 
 <%= render 'static_pages/contributing/benefits' %>
 
-<%= render "static_pages/contributing/hall_of_fame" %>
+<%= render 'static_pages/contributing/hall_of_fame' %>
+
+<%# .page-intro {
+  text-align: center;
+  padding-bottom: 70px;
+
+  &__title {
+    color: $light-orange;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    width: 60%;
+    margin: auto;
+
+    @media (max-width: 991px) {
+      width: 90%;
+      margin: auto;
+    }
+  }
+} %>

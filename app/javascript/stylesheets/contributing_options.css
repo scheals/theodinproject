@@ -1,0 +1,70 @@
+@layer components {
+  .contributing-options {
+    @apply mb-24 relative;
+  }
+
+  .contributing-options__title {
+    @apply text-center font-bold;
+  }
+
+  .contributing-card {
+    @apply h-full; /* REVIEW: probably refactor this? originally 95%, buttons are using absolute */
+  }
+
+  .contributing-card__title {
+    @apply font-bold text-gold text-center;
+  }
+
+  .contributing-card__description {
+    /* breakpoint? */
+    @apply text-center mb-16;
+  }
+
+  .contributing-card__button {
+    /* refactor? */
+    @apply text-center absolute bottom-10 left-0 right-0;
+    /* bootstrap breakpoint? */
+  }
+
+}
+
+/* .contributing-options {
+  margin-bottom: 100px;
+  position: relative;
+
+  &__title {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .contributing-card {
+    height: 95%;
+
+    &__title {
+      font-weight: bold;
+      color: $primary;
+      text-align: center;
+    }
+
+    &__description {
+      text-align: center;
+      margin-bottom: 80px;
+
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__button {
+      text-align: center;
+      position: absolute;
+      bottom: 40px;
+      left: 0;
+      right: 0;
+
+      @include media-breakpoint-down(sm) {
+        position: static;
+      }
+    }
+  }
+} */
