@@ -4,15 +4,18 @@
 
   <%= render 'lessons/header', lesson: @lesson %>
 
-  <main class="grid grid-cols-12 gap-x-6">
+  <main class="grid grid-cols-12 gap-x-6" data-controller="lesson-toc" data-lesson-toc-item-classes-value="no-underline">
     <article class="col-span-full xl:col-span-8 xl:col-start-2">
-      <div class="lesson-content max-w-prose mx-auto xl:mx-0 text-lg" data-controller="syntax-highlighting">
+      <div class="lesson-content max-w-prose mx-auto xl:mx-0 text-lg" data-controller="syntax-highlighting" data-lesson-toc-target="lessonContent">
         <%= @lesson.content.html_safe %>
       </div>
     </article>
 
-     <aside class="col-span-4 col-start-10 hidden xl:block">
-      <div class="sticky top-12 pb-20 lesson-navigation"></div>
+    <aside class="col-span-4 col-start-10 hidden xl:block">
+      <div class="sticky top-12 pb-20">
+        <h4 class="text-xl font-semibold pb-4 text-gray-500 odin-dark-light-gray-font">In this lesson</h4>
+        <ul class="flex flex-col space-y-3 text-gray-500" data-lesson-toc-target="toc"></ul>
+      </div>
     </aside>
   </main>
 </div>
